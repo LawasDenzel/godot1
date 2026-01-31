@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://b6pi75bp6uto2"]
+
+[ext_resource type="Script" uid="uid://diiap1e7ju0gg" path="res://main.tscn/label.gd" id="1_crwy1"]
+[ext_resource type="Texture2D" uid="uid://bc5l5px0p3ch6" path="res://istockphoto-626205158-612x612.jpg" id="2_1vvh7"]
+
+[node name="main" type="Node2D"]
+
+[node name="Label" type="Label" parent="."]
+offset_left = 506.0
+offset_top = 294.0
+offset_right = 597.0
+offset_bottom = 317.0
+text = "Hello World"
+script = ExtResource("1_crwy1")
+
+[node name="Hello World" type="Node2D" parent="."]
+scale = Vector2(5, 5)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(578.5, 326.5)
+scale = Vector2(1.8905228, 1.5955882)
+texture = ExtResource("2_1vvh7")
