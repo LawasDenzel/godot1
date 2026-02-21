@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://c0d6xdrnhjgdv"]
+
+[ext_resource type="Script" uid="uid://dx28h5ucv47gx" path="res://scripts/trap.gd" id="1_npg1n"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_62q8x"]
+size = Vector2(62.75, 64.5)
+
+[node name="Trap" type="Area2D" unique_id=1653893014]
+script = ExtResource("1_npg1n")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=689061373]
+offset_left = -32.0
+offset_top = -32.0
+offset_right = 31.0
+offset_bottom = 33.0
+color = Color(0.81960785, 0, 0, 0.7647059)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=153653373]
+position = Vector2(-0.375, 0.25)
+shape = SubResource("RectangleShape2D_62q8x")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
